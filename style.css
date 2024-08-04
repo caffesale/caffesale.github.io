@@ -4,7 +4,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  list-style-position: inside;
 }
 
 /* remove default spacing */
@@ -213,10 +213,26 @@ mark {
 }
 
 .stack--item {
-  margin-inline-start: 2rem;
   margin-block-end: 0.25rem;
 }
 
 .stack--item__bold {
   font-weight: var(--fw-bold);
+}
+
+.project {
+  font-size: var(--fs-md);
+  margin-block-end: 1.25rem;
+}
+
+.project--description {
+  margin-block-end: 0.5rem;
+  font-size: var(--fs-lg);
+}
+
+.project--item {
+}
+
+.sample {
+  font-size: var(--fs-md);
 }
