@@ -66,6 +66,7 @@ html {
   --fs-md: 1.6rem;
   --fs-sm: 1.4rem;
   --fw-bold: 700;
+  --fw-semi-bold: 600;
   --fw-normal: 400;
   --gap: 2rem;
   --icon-size: 2rem;
@@ -164,6 +165,7 @@ mark {
 }
 
 .section--title {
+  font-weight: var(--fw-semi-bold);
   font-size: var(--fs-xlg);
   color: var(--clr-primary);
   padding-block-end: 0.25rem;
@@ -196,11 +198,18 @@ mark {
   font-weight: var(--fw-bold);
 }
 
+.section--paragraph {
+  font-size: var(--fs-md);
+}
+
 .stack {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-wrap: pretty;
   font-size: var(--fs-md);
+  @media screen and (width < 1024px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .stack--item {
