@@ -45,7 +45,7 @@ a {
 
 a:hover,
 a:active {
-  color: black;
+  color: var(--clr-primary);
   text-decoration: none;
 }
 
@@ -203,25 +203,29 @@ mark {
   font-size: var(--fs-md);
 }
 
-/* .work_experience {
-  display: grid;
-  justify-content: center;
-} */
+.work_experience {
+  font-size: var(--fs-md);
+}
 
 .work_experience--infos {
-  font-size: var(--fs-md);
+  display: grid;
+  justify-content: center;
+  gap: 0.35rem;
   text-align: center;
+  margin-block-end: 1rem;
 }
 
-.work_experience--description {
-  margin-block-end: 0.75rem;
-}
-
-.work_experience--infos__bold {
+.work_experience--company {
   font-size: var(--fs-lg);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
 }
 
-.work_experience--list {
+.work_experience--link {
+  font-size: var(--fs-sm);
+  color: var(--clr-gray);
+  font-style: italic;
+}
+
+.about_me {
   font-size: var(--fs-md);
 }
