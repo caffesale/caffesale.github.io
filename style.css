@@ -171,37 +171,6 @@ mark {
   padding-block-end: 0.25rem;
 }
 
-.section--main {
-  display: grid;
-  grid-template-columns: 35ch 1fr;
-  gap: 2rem;
-  align-items: center;
-  font-size: var(--fs-md);
-  text-wrap: pretty;
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.section--infos {
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
-
-.section--infos > * {
-  margin-block-end: 0.45rem;
-}
-
-.section--main__bold {
-  font-weight: var(--fw-bold);
-}
-
-.section--paragraph {
-  font-size: var(--fs-md);
-}
-
 .stack {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -230,9 +199,29 @@ mark {
   font-size: var(--fs-lg);
 }
 
-.project--item {
+.sample {
+  font-size: var(--fs-md);
 }
 
-.sample {
+/* .work_experience {
+  display: grid;
+  justify-content: center;
+} */
+
+.work_experience--infos {
+  font-size: var(--fs-md);
+  text-align: center;
+}
+
+.work_experience--description {
+  margin-block-end: 0.75rem;
+}
+
+.work_experience--infos__bold {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.work_experience--list {
   font-size: var(--fs-md);
 }
